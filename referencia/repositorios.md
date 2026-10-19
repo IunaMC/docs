@@ -11,7 +11,7 @@ aqui só pelo nome e pelo papel.
 | `modpack-moderacao` | privado | Pack da staff: herda o `modpack` pelo `base.toml` e soma os mods de moderação. | `devel/devel` → `main` |
 | `minecraft-config` | privado | `config/` e `server.properties` do servidor. O arquivo `MODPACK` diz com qual versão do pack elas foram testadas. | `devel/devel` → `main` |
 | `minecraft-infra` | privado | Infraestrutura do servidor: compose, comando de inicialização e anotações. | `main` |
-| [`docs`](https://github.com/IunaMC/docs) | público | Esta documentação. | `main` |
+| [`docs`](https://github.com/IunaMC/docs) | privado até a revisão; depois, público | Esta documentação. | `main` |
 | [`issues`](https://github.com/IunaMC/issues) | público | Bugs e sugestões da comunidade. | `main` |
 | [`.github`](https://github.com/IunaMC/.github) | público | Perfil da organização e modelos de issue. | `main` |
 

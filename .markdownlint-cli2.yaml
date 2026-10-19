@@ -14,10 +14,15 @@ config:
   # Títulos iguais em seções diferentes (ex.: "Passos") são permitidos.
   MD024:
     siblings_only: true
+  # Títulos e listas colados ao texto anterior são o estilo da casa
+  # ("## Passos" seguido direto da lista, "**Rótulo:**" seguido da lista).
+  MD022: false
+  MD032: false
   # Bloco de código sem linguagem é permitido para diagramas em texto.
   MD040: false
 
 ignores:
+  - ".claude/**"
   - "node_modules/**"
   - "pack/**"
   - "servidor-teste/**"
