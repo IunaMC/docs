@@ -16,6 +16,7 @@
 - [Processos automáticos](processo/automatico.md)
 - [Processos manuais](processo/manual.md)
 - [Se o GitHub cair](processo/se-o-github-cair.md)
+- [Roadmap](processo/roadmap.md)
 
 ## Servidor
 

@@ -53,6 +53,15 @@ explicação.
   branch e variável vão entre crases.
 - Datas como `19/10/2026`, versões como `v3.3.0` (tag) ou `3.3.0` (número).
 
+## Issues
+
+- Título no formato `<área>: <o que muda>`, em português e no presente:
+  `scripts: op.sh ci espera o Validar e mostra só o erro`. A área é o que o
+  Conventional Commit usaria como escopo (`scripts`, `docs`, `infra`, `brand`).
+- O corpo diz o que acontece hoje, a proposta e quando está pronto.
+- Toda issue de trabalho planejado entra no
+  [roadmap](../processo/roadmap.md).
+
 ## Formato
 
 - Um `#` por arquivo, que é o título. Seções com `##` e `###`.
