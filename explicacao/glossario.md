@@ -69,7 +69,7 @@ Como as peças se ligam está na [arquitetura](arquitetura.md).
 | *Smoke test* de boot | sobe um servidor real com as configs e espera o "Done" | [servidor local](https://github.com/IunaMC/modpack/blob/main/docs/guias/servidor-local.md) |
 | Paridade local/CI | tudo que o CI faz tem comando local | `scripts/op.sh` |
 | *Runbook* | passo a passo para o que dá errado | [se o GitHub cair](../processo/se-o-github-cair.md) |
-| *Provisioning* | o servidor roda o `packwiz-installer` contra `iuna.space/pack/pack.toml` a cada boot | [decisão 0002](../decisoes/0002-servidor-instala-da-main.md) |
+| *Provisioning* | o servidor roda o `packwiz-installer` contra `iuna.club/pack/pack.toml` a cada boot | [decisão 0002](../decisoes/0002-servidor-instala-da-main.md) |
 | *Config as code* | `config/` e `server.properties` num repositório próprio, com a versão do pack testada | `minecraft-config` (privado) |
 | *Status report* automatizado | issue semanal com o estado dos repositórios | *Resumo semanal* |
 | *Rollback* | instalar o `.mrpack` de uma release anterior ou fixar a tag no servidor | GitHub Releases |
@@ -81,7 +81,7 @@ Como as peças se ligam está na [arquitetura](arquitetura.md).
 | *Distribution channel* | Modrinth e CurseForge |
 | *Store listing* como código | textos, links e galeria do Modrinth em `modrinth/`, aplicados pelo workflow |
 | *Redistribution compliance* | mods "All Rights Reserved" e o pedido de permissão em `modrinth/permissoes.md` |
-| *Redirect*, atalho | `iuna.space/modpack`, `/mrpack` e `/pack/pack.toml` ([arquitetura](arquitetura.md#atalhos-do-domínio)) |
+| *Redirect*, atalho | `iuna.club/modpack`, `/mrpack` e `/pack/pack.toml` ([arquitetura](arquitetura.md#atalhos-do-domínio)) |
 
 ## Termos que parecem iguais e não são
 

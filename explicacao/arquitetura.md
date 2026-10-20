@@ -15,8 +15,8 @@ plataformas (Modrinth e CurseForge) e o servidor.
           ┌──────────────────────┬───────────────────────────┼──────────────────┐
           ▼                      ▼                           ▼                  ▼
    GitHub Releases          Modrinth                    CurseForge        servidor (a cada boot)
-   (.mrpack, iuna.space/    (página em modrinth/,       (.zip completo,   packwiz-installer
-    mrpack)                  versões pelo Release)       revisão manual)   ← iuna.space/pack/pack.toml
+   (.mrpack, iuna.club/    (página em modrinth/,       (.zip completo,   packwiz-installer
+    mrpack)                  versões pelo Release)       revisão manual)   ← iuna.club/pack/pack.toml
                                                                             ← main (só estáveis)
 ```
 
@@ -40,7 +40,7 @@ merge commit, sai a estável. Ele cria a tag, a release com o `.mrpack` e as
 notas do `MUDANCAS.md` e publica no Modrinth e na CurseForge.
 
 **Servidor.** A cada boot, o servidor roda o `packwiz-installer` contra
-`https://iuna.space/pack/pack.toml`, um atalho que redireciona para o pack da
+`https://iuna.club/pack/pack.toml`, um atalho que redireciona para o pack da
 `main`. Ele baixa só o que é `server` e `both` e apaga o que saiu do pack. Como
 a `main` só tem estáveis, reiniciar é o deploy
 ([decisão 0002](../decisoes/0002-servidor-instala-da-main.md)). As configs vêm
@@ -59,9 +59,9 @@ Dependabot atualiza as actions dos workflows.
 
 | Atalho | Leva a |
 | --- | --- |
-| `https://iuna.space/modpack` | Página do pack no Modrinth |
-| `https://iuna.space/mrpack` | `.mrpack` da última release |
-| `https://iuna.space/pack/pack.toml` | `pack/pack.toml` da `main`, para o instalador do servidor. O `index.toml` e os `.pw.toml` resolvem no mesmo caminho |
+| `https://iuna.club/modpack` | Página do pack no Modrinth |
+| `https://iuna.club/mrpack` | `.mrpack` da última release |
+| `https://iuna.club/pack/pack.toml` | `pack/pack.toml` da `main`, para o instalador do servidor. O `index.toml` e os `.pw.toml` resolvem no mesmo caminho |
 
 São redirecionamentos simples, mantidos à mão no DNS.
 

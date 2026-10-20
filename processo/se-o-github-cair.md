@@ -1,7 +1,7 @@
 # Se o GitHub cair
 
 O servidor roda o `packwiz-installer-bootstrap` a cada boot, contra
-`https://iuna.space/pack/pack.toml`. O atalho só redireciona para o GitHub,
+`https://iuna.club/pack/pack.toml`. O atalho só redireciona para o GitHub,
 então, sem acesso ao GitHub, o instalador falha. Os jars da última instalação
 continuam na pasta `mods/`.
 
