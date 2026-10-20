@@ -29,3 +29,9 @@ Release recusa beta nela e falha se o `pack/` mudar sem versão nova.
 - Fixar uma versão exige trocar o comando para a URL do GitHub com a tag.
 - As configs não seguem o mesmo caminho: são enviadas à mão
   ([processo](../processo/enviar-configs.md)).
+
+## Notas
+
+- *Nota de 20/10/2026:* o iuna.space expirou, e o atalho passou a ser
+  `https://iuna.club/pack/pack.toml`, com o mesmo redirecionamento. A decisão
+  não mudou ([migrar o domínio](../processo/migrar-dominio.md)).

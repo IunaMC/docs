@@ -35,8 +35,13 @@ explicação.
   (commit, PR ou issue).
 - Não invente motivo. O que não está no repositório, no histórico do git ou
   numa conversa registrada fica como **a confirmar**.
-- Decisão não se edita depois de aceita. Se mudar, escreva outra e marque a
-  antiga como substituída.
+- A decisão não muda depois de aceita. Se mudar, escreva outra e marque a
+  antiga como substituída. Assim o histórico mostra o que se sabia e o que se
+  decidiu em cada data.
+- Esclarecimentos que não mudam a decisão são permitidos: um exemplo, um link,
+  um erro de digitação, um nome que mudou. Vão numa seção `## Notas` no fim,
+  cada um começando por *Nota de DD/MM/AAAA:*, sem reescrever o texto
+  original.
 
 ## Texto
 

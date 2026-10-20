@@ -35,3 +35,17 @@ da equipe.
   resolve depois da estável seguinte.
 - A documentação dos processos automáticos e manuais fica para depois de
   revisá-los ([o que só uma pessoa faz](../processo/manual.md)).
+
+## Notas
+
+- *Nota de 20/10/2026:* exemplos do critério.
+  - O guia de adicionar um mod fica no `modpack`: os comandos são do
+    `curseforge.py` e do `op.sh` de lá, e mudam com eles.
+  - O ciclo de versão fica aqui: passa pelo `modpack`, pela moderação e pelas
+    configs, e nenhum deles sozinho o descreve.
+  - Os cargos e os comandos do jogador ficam aqui, porque são públicos. Os nós
+    de permissão e os comandos da staff ficam no `minecraft-config`, que é
+    privado.
+  - A regra de versão da `main` fica no `modpack`
+    (`docs/referencia/versionamento.md`), porque o `pack.py conferir` de lá a
+    aplica. Aqui só há o link.
