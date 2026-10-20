@@ -34,4 +34,4 @@ da equipe.
 - Os links entre repositórios usam a `main`. Página nova no `modpack` só
   resolve depois da estável seguinte.
 - A documentação dos processos automáticos e manuais fica para depois de
-  revisá-los ([o que só uma pessoa faz](../processo/so-uma-pessoa-faz.md)).
+  revisá-los ([o que só uma pessoa faz](../processo/manual.md)).
