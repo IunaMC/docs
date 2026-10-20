@@ -12,6 +12,7 @@
 - [Ciclo de versão](processo/ciclo-de-versao.md)
 - [Propagar uma estável](processo/propagar.md)
 - [Enviar as configs ao servidor](processo/enviar-configs.md)
+- [Migrar o domínio](processo/migrar-dominio.md)
 - [O que só uma pessoa faz](processo/so-uma-pessoa-faz.md)
 - [Se o GitHub cair](processo/se-o-github-cair.md)
 
