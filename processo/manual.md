@@ -18,21 +18,23 @@ foi revisada em 20/10/2026. O que roda sozinho está em
 
 ## Ainda pela skill, vai virar script
 
-Estes passos são mecânicos, mas hoje dependem de uma skill do Claude Code.
-Sem ela, são feitos à mão pelos guias de cada repositório. Cada um tem uma
-issue com o passo atual e o script proposto.
+Estes passos são mecânicos e já viraram script no `modpack` (22/10/2026); a
+skill só chama o script. Os que faltam estão nas issues dos outros dois
+repositórios. As issues do `modpack` fecham quando a estável com os scripts
+chegar à `main`.
 
-| Skill | Passo | Issue |
+| Passo | Script | Issue |
 | --- | --- | --- |
-| `/add-mod` (modpack) | Definir o lado de cada mod pelo Modrinth | [modpack#17](https://github.com/IunaMC/modpack/issues/17) |
-| `/remover-mod` | Achar dependências órfãs e configs que sobram | [modpack#18](https://github.com/IunaMC/modpack/issues/18) |
-| `/beta` | Versão, `refresh`, README, commit, push e acompanhar o Release | [modpack#19](https://github.com/IunaMC/modpack/issues/19) |
-| `/estavel` | PR, merge, Release e alinhar a `devel/devel` | [modpack#20](https://github.com/IunaMC/modpack/issues/20) |
-| `/propagar` | Moderação (refazer o commit do bot com assinatura, PR, merge) e `MODPACK` | [modpack#21](https://github.com/IunaMC/modpack/issues/21) |
-| `/testar` (modpack) | Esperar o Validar e mostrar só o erro | [modpack#22](https://github.com/IunaMC/modpack/issues/22) |
-| `/enviar-configs` | Comparar a `config/` do servidor com o repositório | [minecraft-config#10](https://github.com/IunaMC/minecraft-config/issues/10) |
-| `/versao` e `/testar` (configs) | Versão, conferência dos marcadores e teste | [minecraft-config#11](https://github.com/IunaMC/minecraft-config/issues/11) |
-| `/add-mod` (moderação) | Achar o que o pack base já tem | [modpack-moderacao#8](https://github.com/IunaMC/modpack-moderacao/issues/8) |
+| Definir o lado de cada mod pelo Modrinth (`/add-mod`) | `pack.py lado` | [modpack#17](https://github.com/IunaMC/modpack/issues/17) |
+| Achar dependências órfãs e configs que sobram (`/remover-mod`) | `pack.py orfas` | [modpack#18](https://github.com/IunaMC/modpack/issues/18) |
+| Versão, `refresh`, README, commit, push e acompanhar o Release (`/beta`) | `op.sh beta` | [modpack#19](https://github.com/IunaMC/modpack/issues/19) |
+| PR, merge, Release e alinhar a `devel/devel` (`/estavel`) | `op.sh estavel` | [modpack#20](https://github.com/IunaMC/modpack/issues/20) |
+| Moderação (refazer o commit do bot com assinatura, PR, merge) e `MODPACK` (`/propagar`) | `op.sh propagar` | [modpack#21](https://github.com/IunaMC/modpack/issues/21) |
+| Esperar o Validar e mostrar só o erro (`/testar`) | `op.sh ci` | [modpack#22](https://github.com/IunaMC/modpack/issues/22) |
+| Avisar quando um token vence | Resumo semanal | [modpack#23](https://github.com/IunaMC/modpack/issues/23) |
+| Comparar a `config/` do servidor com o repositório (`/enviar-configs`) | a fazer | [minecraft-config#10](https://github.com/IunaMC/minecraft-config/issues/10) |
+| Versão, conferência dos marcadores e teste (`/versao` e `/testar` das configs) | a fazer | [minecraft-config#11](https://github.com/IunaMC/minecraft-config/issues/11) |
+| Achar o que o pack base já tem (`/add-mod` da moderação) | a fazer | [modpack-moderacao#8](https://github.com/IunaMC/modpack-moderacao/issues/8) |
 
 Continuam com pessoa ou com a skill: escrever o `MUDANCAS.md` e o texto dos
 PRs, achar o Project ID da CurseForge de um mod novo e ler perfis do Spark.
