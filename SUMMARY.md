@@ -26,6 +26,7 @@
 
 - [Repositórios](referencia/repositorios.md)
 - [Padrão de escrita](referencia/padrao-de-escrita.md)
+- [Regras do Claude Code](referencia/claude.md)
 
 ## Decisões
 
