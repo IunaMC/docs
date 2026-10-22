@@ -14,7 +14,7 @@ Os workflows de agenda só rodam na `main` do repositório.
 | Todo dia, 09h17 UTC (06h17 em Brasília) | `modpack-moderacao` | Acompanhar pack base | Se o `modpack` tem estável nova, a branch `base/vX.Y.Z` e o PR (ou uma issue, se o Actions não puder abrir PR) |
 | Segunda, 06h17 UTC (03h17) | `minecraft-infra` | Cloudflare backup | Artefato com a configuração das zonas do domínio |
 | Segunda, 10h23 UTC (07h23) | `modpack` | Atualizações de mods | Issue fixa **Mods com versão nova**, fechada quando não há nada pendente |
-| Segunda, 10h53 UTC (07h53) | `modpack` | Resumo semanal | Issue fixa **Resumo semanal**: versões dos três repositórios e se estão alinhadas, CI quebrado, commits fora da `main`, PRs e issues abertos, envios de config pendentes e o estado da CurseForge |
+| Segunda, 10h53 UTC (07h53) | `modpack` | Resumo semanal | Issue fixa **Resumo semanal**: versões dos três repositórios e se estão alinhadas, CI quebrado, commits fora da `main`, PRs e issues abertos, envios de config pendentes, o estado da CurseForge e quando vencem os tokens |
 
 ## Por evento
 
@@ -44,8 +44,8 @@ PR devel/devel → main (modpack)
                                                        envio manual ao servidor (pessoa)
 ```
 
-Os passos entre o Release do `modpack` e o `MODPACK` ainda são feitos à mão ou
-pela skill `/propagar`: veja [propagar uma estável](propagar.md).
+Os passos entre o Release do `modpack` e o `MODPACK` são feitos por uma pessoa
+com o `op.sh propagar` (ou a skill `/propagar`): veja [propagar uma estável](propagar.md).
 
 ## Referência de cada repositório
 
