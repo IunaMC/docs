@@ -1,6 +1,7 @@
 name: Validar
 
-# Confere os links internos (arquivos e âncoras) e o estilo de todo .md.
+# Confere os links internos (arquivos e âncoras), o estilo de todo .md e o bloco
+# de regras comuns do CLAUDE.md.
 # Links externos ficam de fora (--offline): sites fora do ar não quebram o CI.
 on:
   push:
@@ -30,3 +31,12 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v24.2.0
         with:
           globs: '**/*.md'
+
+  regras-claude:
+    name: Regras do Claude
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Conferir o bloco do CLAUDE.md
+        run: python3 scripts/regras-comuns.py conferir

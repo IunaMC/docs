@@ -19,6 +19,7 @@ atravessa repositórios. O critério está na
 | Saber qual repositório faz o quê | [Repositórios](referencia/repositorios.md) |
 | Conhecer os cargos do servidor | [Cargos](servidor/cargos.md) |
 | Escrever ou corrigir documentação | [Padrão de escrita](referencia/padrao-de-escrita.md) |
+| Mudar as regras do Claude Code de todos os repositórios | [Regras do Claude Code](referencia/claude.md) |
 
 O índice completo está no [`SUMMARY.md`](SUMMARY.md).
 
