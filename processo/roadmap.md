@@ -8,8 +8,8 @@ nos repositórios; o projeto só as reúne.
 
 | Campo | Valores |
 | --- | --- |
-| Status | A fazer · Em andamento · Concluído |
-| Prioridade | Alta · Normal · Baixa |
+| Status | Descartado · Backlog · Pronto · Em andamento · Concluído |
+| Prioridade | Longo Prazo · Baixa · Média · Alta · Crítica |
 
 Repositório, tipo (Bug, Feature, Task) e responsável vêm da própria issue.
 Não há iteração nem prazo: a ordem vem da prioridade.
@@ -30,19 +30,14 @@ Issue automática (como "Mods com versão nova") não entra.
 
 ## Visões
 
-Criadas na tela do projeto, porque a API não cria visões:
+1. **Backlog:** tabela com todos os itens.
+2. **Prioridade:** quadro por Status, filtro
+   `-is:closed -status:Pronto -status:Descartado`.
 
-1. **Próximos:** *Board*, colunas por Status, filtro `-status:Concluído`.
-2. **Por repositório:** *Table*, *Group by* Repository, *Sort by* Prioridade.
-3. **Alta prioridade:** *Table*, filtro `prioridade:Alta -status:Concluído`.
+A API não cria visões; elas se editam na tela do projeto.
 
 ## Automações
 
-Ligadas em *Workflows*, também só pela tela:
-
-- *Item added to project* → A fazer.
-- *Item closed* e *Pull request merged* → Concluído.
-- *Item reopened* → A fazer.
-- *Auto-archive items*: itens concluídos há mais de 14 dias.
-- *Auto-add to project*: um filtro só no plano gratuito. Os demais itens
-  entram pelo comando acima.
+Ligadas: item adicionado, item reaberto, PR vinculado, PR mergeado, mudanças
+pedidas, revisão aprovada, auto-close da issue e sub-issues. *Item closed*
+está desligado.
