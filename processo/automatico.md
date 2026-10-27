@@ -22,8 +22,7 @@ Os workflows de agenda só rodam na `main` do repositório.
 | --- | --- | --- | --- | --- |
 | `modpack` | Validar | Push fora da `main` que mexe no pack, nos scripts, no README ou no CI | Confere o README e a fonte da CurseForge, exporta `.mrpack` e `.zip` de teste e sobe um servidor de verdade com as configs | Aba Actions e o PR da branch; logs do servidor como artefato |
 | `modpack` | Entrada na main | PR para a `main` | Confere versão e origem do PR; o ruleset da `main` exige que passe | Checks do PR |
-| `modpack` | Release | Push na `main` ou na `devel/devel` com versão nova | Tag, GitHub Release com o `.mrpack`, envio ao Modrinth e à CurseForge. Beta só sai da `devel/devel`, estável só da `main` | Releases, Modrinth, CurseForge (depois da revisão de lá) |
-| `modpack` | Modrinth | Push que muda `modrinth/` | Fora da `main`, mostra o que mudaria; na `main`, aplica a página | Log da execução, página do Modrinth |
+| `modpack` | Release | Push na `main` ou na `devel/devel` com versão nova | Tag, GitHub Release com o `.mrpack` e o `.zip`, envio à CurseForge. Beta só sai da `devel/devel`, estável só da `main` | Releases, CurseForge (depois da revisão de lá) |
 | `modpack`, `docs` | Docs / Validar | Push ou PR que muda `.md` | Links internos e estilo | Aba Actions |
 | `modpack-moderacao` | Validar | Push fora da `main` | Monta o pack sobre o pack base e gera o `.mrpack` de teste | Aba Actions |
 | `modpack-moderacao` | Release | Push na `main` com versão nova | Release com o `.mrpack` da moderação | Releases |
@@ -35,7 +34,7 @@ Os workflows de agenda só rodam na `main` do repositório.
 ```
 PR devel/devel → main (modpack)
   ├─ Entrada na main confere a versão
-  └─ merge ─► Release: tag, .mrpack, Modrinth, CurseForge
+  └─ merge ─► Release: tag, .mrpack, CurseForge
                 │
                 ├─ servidor instala a main no próximo boot
                 ├─ Acompanhar pack base (moderação) ─► PR base/vX.Y.Z ─► Release da moderação

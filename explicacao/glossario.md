@@ -6,8 +6,7 @@ Como as peças se ligam está na [arquitetura](arquitetura.md).
 
 > O IUNA é um modpack definido como código (*pack-as-code*, packwiz), validado
 > por CI com *quality gates*, empacotado em artefatos versionados por SemVer,
-> publicado de forma automática no Modrinth e na CurseForge (*release
-> automation*) e provisionado no servidor a cada boot.
+> publicado de forma automática na CurseForge (*release automation*) e provisionado no servidor a cada boot.
 
 ## De `.zip` à mão para uma esteira
 
@@ -54,10 +53,10 @@ Como as peças se ligam está na [arquitetura](arquitetura.md).
 | *Concurrency* | impede duas execuções do mesmo workflow na mesma branch | bloco `concurrency:` |
 | *CI* | o Validar | idem |
 | *Quality gate* | README em dia, fonte da CurseForge certa, índice sem hash errado, servidor sobe | Validar; o Release recusa versão inválida |
-| *Build artifact* | `.mrpack` (Modrinth) e `.zip` (CurseForge) | `packwiz mr export`, `packwiz curseforge export` |
-| *CD*, *release automation* | tag, GitHub Release e publicação nas duas plataformas | `release.yaml` |
+| *Build artifact* | `.mrpack` (formato do Modrinth, na release do GitHub) e `.zip` (CurseForge) | `packwiz mr export`, `packwiz curseforge export` |
+| *CD*, *release automation* | tag, GitHub Release e publicação na CurseForge | `release.yaml` |
 | *Pre-release* | beta `X.Y.Z-beta.N`, publicada por push na `devel/devel` | [versionamento](https://github.com/IunaMC/modpack/blob/main/docs/referencia/versionamento.md) |
-| *Idempotência* | se a release já existe, só republica nas plataformas | job `versao` do Release |
+| *Idempotência* | se a release já existe, só republica na CurseForge | job `versao` do Release |
 | *Dry run* | `--simular` mostra o que seria enviado | [scripts do modpack](https://github.com/IunaMC/modpack/blob/main/docs/referencia/scripts.md) |
 | *Secrets* | tokens como secrets do repositório, nunca no código | [segredos do modpack](https://github.com/IunaMC/modpack/blob/main/docs/referencia/segredos.md) |
 | *Scheduled job* | atualizações e resumo toda segunda | *Atualizações de mods*, *Resumo semanal* |
@@ -78,9 +77,9 @@ Como as peças se ligam está na [arquitetura](arquitetura.md).
 
 | Termo | No IUNA |
 | --- | --- |
-| *Distribution channel* | Modrinth e CurseForge |
-| *Store listing* como código | textos, links e galeria do Modrinth em `modrinth/`, aplicados pelo workflow |
-| *Redistribution compliance* | mods "All Rights Reserved" e o pedido de permissão em `modrinth/permissoes.md` |
+| *Distribution channel* | CurseForge e a release do GitHub ([decisão do modpack](https://github.com/IunaMC/modpack/blob/main/docs/decisoes/0008-sem-distribuicao-no-modrinth.md)) |
+| *Store listing* como código | a descrição da CurseForge em `curseforge/`, colada à mão |
+| *Redistribution compliance* | licença de cada jar anexado à release `arquivos-servidor` ([arquivos externos](https://github.com/IunaMC/modpack/blob/main/docs/guias/arquivos-externos.md)) |
 | *Redirect*, atalho | `iuna.club/modpack`, `/mrpack` e `/pack/pack.toml` ([arquitetura](arquitetura.md#atalhos-do-domínio)) |
 
 ## Termos que parecem iguais e não são
@@ -101,8 +100,7 @@ Peças comuns em esteiras desse tipo que o IUNA ainda não tem:
 
 - lint ou testes automatizados dos scripts Python (o CI valida o pack, não o
   código que o valida);
-- conferência automática de licença dos mods antes da release (hoje é manual,
-  pelo `modrinth/permissoes.md`);
+- conferência automática de licença dos mods antes da release (hoje é manual);
 - `CODEOWNERS` e proteção da `main` por *ruleset* (a regra está no `CLAUDE.md`,
   mas o GitHub ainda não a impõe);
 - métricas e alertas do servidor em produção documentados.

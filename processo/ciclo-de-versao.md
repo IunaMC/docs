@@ -22,8 +22,8 @@ O Validar roda a cada push.
 ## 2. Beta
 
 Sobe a versão no `pack/pack.toml` com sufixo `-beta.N`, reescreve o
-`MUDANCAS.md` e faz push. O Release publica uma *pre-release* no GitHub, no
-Modrinth e na CurseForge. O servidor não a instala.
+`MUDANCAS.md` e faz push. O Release publica uma *pre-release* no GitHub e na
+CurseForge. O servidor não a instala.
 [Guia](https://github.com/IunaMC/modpack/blob/main/docs/guias/publicar-beta.md).
 
 ## 3. Estável
