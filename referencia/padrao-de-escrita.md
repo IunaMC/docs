@@ -46,7 +46,7 @@ explicação.
 ## Texto
 
 - Português do Brasil. Inglês só como tradução à parte (`README.en.md`). A
-  exceção é a página do Modrinth, em inglês com o português recolhível.
+  exceção é a descrição da CurseForge, só em inglês.
 - Frases curtas, voz ativa, segunda pessoa nos guias ("rode", "confira").
 - Termo técnico em inglês vai em itálico na primeira vez, se não tiver
   tradução corrente (*pipeline*, *quality gate*). Nome de arquivo, comando,

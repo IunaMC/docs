@@ -7,7 +7,7 @@ aqui só pelo nome e pelo papel.
 
 | Repositório | Visibilidade | Papel | Branches |
 | --- | --- | --- | --- |
-| [`modpack`](https://github.com/IunaMC/modpack) | público | Fonte única do pack, em packwiz. Jogador e servidor instalam daqui; `side = server` marca o que é só do servidor. Publica no Modrinth e na CurseForge. | `devel/devel` → `main` |
+| [`modpack`](https://github.com/IunaMC/modpack) | público | Fonte única do pack, em packwiz. Jogador e servidor instalam daqui; `side = server` marca o que é só do servidor. Publica na CurseForge e na release do GitHub. | `devel/devel` → `main` |
 | `modpack-moderacao` | privado | Pack da staff: herda o `modpack` pelo `base.toml` e soma os mods de moderação. | `devel/devel` → `main` |
 | `minecraft-config` | privado | `config/` e `server.properties` do servidor. O arquivo `MODPACK` diz com qual versão do pack elas foram testadas. | `devel/devel` → `main` |
 | `minecraft-infra` | privado | Infraestrutura do servidor: compose, comando de inicialização e anotações. | `main` |

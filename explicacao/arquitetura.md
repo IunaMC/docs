@@ -1,8 +1,10 @@
 # Arquitetura
 
 O IUNA é um modpack de Minecraft 1.21.1 com NeoForge, mantido como código e
-entregue de forma automática a três destinos: o launcher do jogador, as
-plataformas (Modrinth e CurseForge) e o servidor.
+entregue de forma automática a três destinos: o launcher do jogador, a
+CurseForge e o servidor. O Modrinth é só a fonte da maioria dos mods: o pack
+não é distribuído lá
+([decisão do modpack](https://github.com/IunaMC/modpack/blob/main/docs/decisoes/0008-sem-distribuicao-no-modrinth.md)).
 
 ```text
             ┌──────────────────── IunaMC/modpack ─────────────────────┐
@@ -12,11 +14,11 @@ plataformas (Modrinth e CurseForge) e o servidor.
             │                              servidor sobe     │
             └────────────────────────────────────────────────┼────────┘
                                                              │
-          ┌──────────────────────┬───────────────────────────┼──────────────────┐
-          ▼                      ▼                           ▼                  ▼
-   GitHub Releases          Modrinth                    CurseForge        servidor (a cada boot)
-   (.mrpack, iuna.club/    (página em modrinth/,       (.zip completo,   packwiz-installer
-    mrpack)                  versões pelo Release)       revisão manual)   ← iuna.club/pack/pack.toml
+          ┌──────────────────────────────────────────────────┼──────────────────┐
+          ▼                                                  ▼                  ▼
+   GitHub Releases                                      CurseForge        servidor (a cada boot)
+   (.mrpack completo,                                   (.zip completo,   packwiz-installer
+    iuna.club/mrpack)                                    revisão manual)   ← iuna.club/pack/pack.toml
                                                                             ← main (só estáveis)
 ```
 
@@ -37,7 +39,7 @@ hashes, exporta os artefatos e sobe um servidor de verdade com as configs do
 **Entrega.** O *Release* lê a versão do `pack/pack.toml` (SemVer). Na
 `devel/devel`, beta sai como *pre-release*. Na `main`, que só recebe PR com
 merge commit, sai a estável. Ele cria a tag, a release com o `.mrpack` e as
-notas do `MUDANCAS.md` e publica no Modrinth e na CurseForge.
+notas do `MUDANCAS.md` e publica na CurseForge.
 
 **Servidor.** A cada boot, o servidor roda o `packwiz-installer` contra
 `https://iuna.club/pack/pack.toml`, um atalho que redireciona para o pack da
